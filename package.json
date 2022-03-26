@@ -1,11 +1,11 @@
 {
   "name": "simple-tailwind-gallery",
   "version": "1.0.0",
-  "description": "simple single gallery webpage",
+  "description": "simple single page gallery",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvlpr1996/simple-gallery"
+    "url": "https://github.com/dvlpr1996/simple-tailwind-gallery"
   },
   "scripts": {
     "dev": "postcss app/css/style.css -o dist/css/style.css -w",
