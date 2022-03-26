@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="language" content="en">
 	<meta name="robots" content="index, follow">
 	<meta name="designer" content="nima jahan bakhshian / https://github.com/dvlpr1996">
-	<meta name="subject" content="simple single gallery webpage">
+	<meta name="subject" content="simple single page gallery">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,11 +21,14 @@
   <![endif] -->
 	<title>simple gallery</title>
 </head>
+
 <body>
 	<div class="w-100 hero h-screen text-[#f7f8fc] grayscale-[70%]">
-		<nav class="flex justify-between items-center p-3">
+		<nav class="flex flex-col sm:flex-row sm:justify-between items-center p-5">
 			<div>
-				<i class="fas fa-camera-retro fa-2x"></i>
+				<a href="index.html">
+					<i class="fas fa-camera-retro fa-2x"></i>
+				</a>
 			</div>
 			<div class="space-x-4">
 				<a href="#!" class="nav-link text-lg">home</a>
@@ -33,8 +37,8 @@
 				<a href="#!" class="nav-link text-lg">blog</a>
 			</div>
 		</nav>
-		<div class="flex justify-center items-center hero-text flex-col space-y-4">
-			<h1 class="text-4xl sm:text-5xl">Sophia Curtis Photography</h1>
+		<div class="flex justify-center items-center hero-text flex-col space-y-7 sm:space-y-4 text-center">
+			<h1 class="text-3xl font-bold sm:text-5xl">Sophia Curtis Photography</h1>
 			<p class="text-base md:text-xl lg:text-2xl">
 				I take photographs with creativity, concept and passion
 			</p>
@@ -48,52 +52,116 @@
 	<div class="mt-8 space-x-8 text-center">
 		<a href="#!" class="nav-link text-2xl text-gray-500">all</a>
 		<a href="#!" class="nav-link text-2xl text-gray-500">nature</a>
-		<a href="#!" class="nav-link text-2xl text-gray-500">fashion</a>
+		<a href="#!" class="nav-link text-2xl text-gray-500">city</a>
 		<a href="#!" class="nav-link text-2xl text-gray-500">food</a>
+		<a href="#!" class="nav-link text-2xl text-gray-500">others</a>
 	</div>
 
-	<div class="container mx-auto px-2 mt-8 columns-2 sm:columns-3 lg:columns-5 gap-1">
-		<img src="dist/img/gallery/a.jpeg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/b.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/c.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/d.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/e.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/f.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/g.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/p.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/h.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/i.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/j.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/k.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/l.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/m.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/n.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/o.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/q.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/r.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/s.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/t.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/y.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/v.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/u.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/x.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
-		<img src="dist/img/gallery/z.jpg" class="w-full h-auto object-contain mb-1 rounded-lg">
+	<div class="container mx-auto mt-11 px-3">
+
+		<div class="columns-2 sm:columns-3 lg:columns-5 gap-2">
+
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/a.jpeg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/b.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/c.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/d.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/e.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/f.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/g.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/h.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/i.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/j.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/k.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/l.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/m.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/n.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/o.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/p.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/q.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/r.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/s.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/t.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/u.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/v.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+			<div class="break-inside-avoid">
+				<img src="dist/img/gallery/w.jpg" alt="" class="w-full object-contain mb-2 rounded-lg">
+			</div>
+
+		</div>
 
 	</div>
-
 
 	<footer class="bg-[#151515] text-[#f7f8fc] text-center py-6 space-y-6 mt-24">
-		<i class="fas fa-camera-retro fa-3x"></i>
-		<p>© 2022 simple tailwindCss gallery. All rights reserved</p>
+		<a href="index.html">
+			<i class="fas fa-camera-retro fa-3x"></i>
+		</a>
+
+		<p>©<span id="year"></span> simple tailwindCss gallery. All rights reserved</p>
+
 		<div class="space-x-4">
-			<i class="fab fa-2x fa-pinterest"></i>
-			<i class="fab fa-2x fa-instagram"></i>
-			<i class="fab fa-2x fa-linkedin"></i>
-			<i class="fab fa-2x fa-telegram"></i>
+			<a href="https://codepen.io/dvlpr1996" title="codepen">
+				<i class="fab fa-2x fa-codepen"></i>
+			</a>
+			<a href="https://instagram.com/nima_jahanbakhshian" title="instagram">
+				<i class="fab fa-2x fa-instagram"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/nima-jahan-bakhshian" title="linkedin">
+				<i class="fab fa-2x fa-linkedin"></i>
+			</a>
+			<a href="https://t.me/nima_1375" title="telegram">
+				<i class="fab fa-2x fa-telegram"></i>
+			</a>
 		</div>
+
 	</footer>
 
-
+	<script src="dist/vendor/jquery/jquery.min.js"></script>
+	<script src="dist/js/script.js"></script>
+	<script src="dist/vendor/fslightbox/fslightbox.js"></script>
 </body>
 
 </html>
