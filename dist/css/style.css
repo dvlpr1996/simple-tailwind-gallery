@@ -484,11 +484,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-8{
   margin-top: 2rem;
 }
-.mb-1{
-  margin-bottom: 0.25rem;
+.mt-11{
+  margin-top: 2.75rem;
 }
 .mt-24{
   margin-top: 6rem;
+}
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 .inline-block{
   display: inline-block;
@@ -499,9 +505,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-screen{
   height: 100vh;
 }
-.h-auto{
-  height: auto;
-}
 .w-full{
   width: 100%;
 }
@@ -511,9 +514,17 @@ Ensure the default browser behavior of the `hidden` attribute.
       -ms-user-select: none;
           user-select: none;
 }
+.columns-6{
+  -moz-columns: 6;
+       columns: 6;
+}
 .columns-2{
   -moz-columns: 2;
        columns: 2;
+}
+.break-inside-avoid{
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 .flex-col{
   flex-direction: column;
@@ -524,21 +535,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center{
   justify-content: center;
 }
-.justify-between{
-  justify-content: space-between;
+.gap-2{
+  gap: 0.5rem;
 }
 .gap-1{
   gap: 0.25rem;
+}
+.gap-y-2{
+  row-gap: 0.5rem;
+}
+.gap-x-1{
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
+.space-y-7 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 .space-x-8 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
@@ -568,8 +586,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   -o-object-fit: contain;
      object-fit: contain;
 }
-.p-3{
-  padding: 0.75rem;
+.p-5{
+  padding: 1.25rem;
 }
 .py-2{
   padding-top: 0.5rem;
@@ -578,10 +596,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 .py-6{
   padding-top: 1.5rem;
@@ -594,9 +608,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-base{
   font-size: 1rem;
@@ -605,6 +619,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.font-bold{
+  font-weight: 700;
 }
 .text-\[\#f7f8fc\]{
   --tw-text-opacity: 1;
@@ -623,7 +640,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-
 .hero {
 	background-image: url("../img/hero.jpg");
 	background-repeat: no-repeat;
@@ -633,6 +649,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hero-text {
 	height: calc(100% - 100px);
+}
+
+.hover\:scale-105:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-75:hover{
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-100:hover{
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:border:hover{
@@ -658,6 +692,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:columns-3{
     -moz-columns: 3;
          columns: 3;
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:justify-between{
+    justify-content: space-between;
+  }
+
+  .sm\:space-y-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
   .sm\:text-5xl{
