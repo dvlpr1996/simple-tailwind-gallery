@@ -5,9 +5,8 @@
 <div align="center">
 
 ![gallery-dvlpr1996](https://user-images.githubusercontent.com/93678876/160468538-95be1a17-37d9-4371-ba25-7ef0fe26628e.png)
-
 ![gallery-s-dvlpr1996](https://user-images.githubusercontent.com/93678876/160468884-4a96d946-aa37-4665-981d-51a1200d129a.png)
-
+![gallery-st-dvlpr1996](https://user-images.githubusercontent.com/93678876/160470074-b2d37a17-d436-4c26-80af-00d9a13738d3.png)
 ![gallery-f-dvlpr1996](https://user-images.githubusercontent.com/93678876/160468982-5c8e8620-80d2-4011-9fdc-f886294fdff2.png)
   
 </div>
