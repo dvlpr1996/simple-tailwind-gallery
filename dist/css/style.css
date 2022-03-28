@@ -385,19 +385,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.nav-link{
+.filter_link{
+  font-size: 1.5rem;
+  line-height: 2rem;
   text-transform: capitalize;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
 
-.nav-link:hover{
+.filter_link:hover{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   -webkit-text-decoration-style: solid;
           text-decoration-style: solid;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
+
+.media{
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 
 *, ::before, ::after{
@@ -487,14 +496,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-11{
   margin-top: 2.75rem;
 }
-.mt-24{
-  margin-top: 6rem;
-}
-.mb-1{
-  margin-bottom: 0.25rem;
-}
 .mb-2{
   margin-bottom: 0.5rem;
+}
+.mt-24{
+  margin-top: 6rem;
 }
 .inline-block{
   display: inline-block;
@@ -514,17 +520,9 @@ Ensure the default browser behavior of the `hidden` attribute.
       -ms-user-select: none;
           user-select: none;
 }
-.columns-6{
-  -moz-columns: 6;
-       columns: 6;
-}
 .columns-2{
   -moz-columns: 2;
        columns: 2;
-}
-.break-inside-avoid{
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
 }
 .flex-col{
   flex-direction: column;
@@ -538,15 +536,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-2{
   gap: 0.5rem;
 }
-.gap-1{
-  gap: 0.25rem;
-}
-.gap-y-2{
-  row-gap: 0.5rem;
-}
-.gap-x-1{
-  -moz-column-gap: 0.25rem;
-       column-gap: 0.25rem;
+.gap-3{
+  gap: 0.75rem;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
@@ -567,6 +558,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+.space-x-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .rounded-\[50px\]{
   border-radius: 50px;
@@ -616,10 +612,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
 .font-bold{
   font-weight: 700;
 }
@@ -630,10 +622,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.text-gray-500{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 .grayscale-\[70\%\]{
   --tw-grayscale: grayscale(70%);
@@ -649,24 +637,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hero-text {
 	height: calc(100% - 100px);
-}
-
-.hover\:scale-105:hover{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-75:hover{
-  --tw-scale-x: .75;
-  --tw-scale-y: .75;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-100:hover{
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:border:hover{
@@ -685,6 +655,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-\[\#f7f8fc\]:hover{
   --tw-text-opacity: 1;
   color: rgb(247 248 252 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-70:hover{
+  opacity: 0.7;
 }
 
 @media (min-width: 640px){
@@ -715,6 +689,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
+
+  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
 
   .md\:text-xl{
     font-size: 1.25rem;
